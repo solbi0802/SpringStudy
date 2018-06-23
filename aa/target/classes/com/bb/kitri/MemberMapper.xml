@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bb.kitri.MemberMapper">
+	<resultMap type="com.bb.kitri.Member" id="MemberResultMap">
+		<result property="name" column="NAME"/>
+		<result property="tel" column="TEL"/>
+		<result property="address" column="ADDRESS"/>
+	</resultMap>
+	
+	<select id="getMembers" resultMap="MemberResultMap">
+		SELECT * FROM MEMBER
+	</select>
+	
+	<select id="getMember" resultMap="MemberResultMap">
+		SELECT * FROM MEMBER WHERE name=#{name}
+	</select>
+	
+	<insert id="insertMember" parameterType="com.bb.kitri.Member">
+		INSERT INTO member
+		VALUES(#{name}, #{tel}, #{address})
+	</insert>
+	
+	<update id="updateMember" parameterType="com.bb.kitri.Member">
+		UPDATE member
+		SET tel=#{tel}, address=#{address} where name=#{name}
+	</update>
+	
+	<delete id="deleteMember" parameterType="com.bb.kitri.Member">
+		DELETE member
+		WHERE name=#{name}
+	</delete>
+</mapper>	 
