@@ -9,14 +9,14 @@
  1. Portable Service Abstraction (서비스 추상화)
  기술적인 복잡함은 추상화를 통해 low Level의 기술 구현 부분과 기술을 사용하는 인터페이스로 분리한다.
 
- 2. DI(Dependency Injection) 의존 관계 주입
- Spring은 객체지향에 충실한 설계가 가능하도록 단순한 객체 형태로 개발할 수 있고, DI는 유연하게 확장 가능한 객체를 만들어 두고 그 관계는 
- 외부에서 다이내믹하게 설정해준다.
+ 2. DI(Dependency Injection) 의존 관계 주입 <br>
+ Spring은 객체지향에 충실한 설계가 가능하도록 단순한 객체 형태로 개발할 수 있고, DI는 유연하게 확장 가능한 객체를 만들어 두고 <br>
+ 그 관계는 외부에서 다이내믹하게 설정해준다.
 
- 3. AOP(Aspect Oriented Programming) 관점지향프로그래밍
+ 3. AOP(Aspect Oriented Programming) 관점지향프로그래밍 <br>
  애플리케이션 로직을 담당하는 코드에 남아 있는 기술 관련 코드를 분리해서 별도의 모듈로 관리하게 해주는 강력한 기술이다.
 
- 4. POJO(Plain Old Java Object)
+ 4. POJO(Plain Old Java Object) 
  객체지향 원리에 충실하면서, 특정 환경이나 규약에 종속되지 않고 필요에 따라 재활용될 수 있는 방식으로 설계된 객체이다.
 
  Spring Framework 특징
